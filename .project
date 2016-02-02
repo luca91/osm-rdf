@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>osm-rdfs</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>crosby</name>
+			<type>2</type>
+			<location>C:/Users/Luca/git/external/crosby</location>
+		</link>
+		<link>
+			<name>java</name>
+			<type>2</type>
+			<location>C:/Users/Luca/git/external/java</location>
+		</link>
+		<link>
+			<name>osmosis-core</name>
+			<type>2</type>
+			<location>C:/Users/Luca/git/external/osmosis-core</location>
+		</link>
+	</linkedResources>
+</projectDescription>

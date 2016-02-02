@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://osmtordf.org/osm#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://osmtordf.org/osm#partOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://osmtordf.org/osm#Way"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A2"/>
+    <rdf:first rdf:resource="http://osmtordf.org/osm#Node"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#Node">
+    <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#tag">
+    <rdfs:range rdf:nodeID="A3"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Tag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#Way">
+    <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#Element">
+    <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#addressCountry">
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Way"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Node"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <owl:members rdf:nodeID="A1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <owl:onClass rdf:resource="http://osmtordf.org/osm#Coordinate"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://osmtordf.org/osm#isLocated"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <owl:someValuesFrom rdf:resource="http://osmtordf.org/osm#Relation"/>
+    <owl:onProperty rdf:resource="http://osmtordf.org/osm#isComposedOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#primaryFeature">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#addressPostcode">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Way"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Node"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#isComposedOf">
+    <rdfs:range rdf:nodeID="A7"/>
+    <rdfs:range rdf:nodeID="A6"/>
+    <rdfs:range rdf:nodeID="A8"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Way"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Relation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#tagValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Tag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#tagKey">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Tag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#Latitude">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Coordinate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#Coordinate">
+    <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#isLocated">
+    <rdfs:range rdf:nodeID="A5"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Node"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A0"/>
+    <rdf:first rdf:resource="http://osmtordf.org/osm#Relation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#OpenStreetMap">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#Longitude">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Coordinate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#Relation">
+    <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#addressStreet">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Way"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Node"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#addressCity">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Way"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Node"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <owl:someValuesFrom rdf:resource="http://osmtordf.org/osm#Element"/>
+    <owl:onProperty rdf:resource="http://osmtordf.org/osm#tag"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <owl:someValuesFrom rdf:resource="http://osmtordf.org/osm#Way"/>
+    <owl:onProperty rdf:resource="http://osmtordf.org/osm#isComposedOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <owl:someValuesFrom rdf:resource="http://osmtordf.org/osm#Node"/>
+    <owl:onProperty rdf:resource="http://osmtordf.org/osm#isComposedOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#addressHouseNr">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Way"/>
+    <rdfs:domain rdf:resource="http://osmtordf.org/osm#Node"/>
+    <rdfs:subPropertyOf rdf:resource="http://osmtordf.org/osm#addressStreet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://osmtordf.org/osm#Tag">
+    <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

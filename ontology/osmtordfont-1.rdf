@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://osmtordf.org/osm#"
+     xml:base="http://osmtordf.org/osm"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://osmtordf.org/osm"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://osmtordf.org/osm#addressCity -->
+
+    <owl:ObjectProperty rdf:about="http://osmtordf.org/osm#addressCity">
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Bank"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Bar"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#BusLine"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#BusStop"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#FireFighter"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Hotel"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#House"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Police"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Postoffice"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Restaurant"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#River"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#School"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Shop"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#TrainStation"/>
+        <rdfs:range rdf:resource="http://osmtordf.org/osm#Street"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://osmtordf.org/osm#addressNr -->
+
+    <owl:ObjectProperty rdf:about="http://osmtordf.org/osm#addressNr">
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Bank"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Bar"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#BusLine"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#BusStop"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#FireFighter"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Hotel"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#House"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Police"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Postoffice"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Restaurant"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#River"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#School"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Shop"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#TrainStation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://osmtordf.org/osm#addressPostcode -->
+
+    <owl:ObjectProperty rdf:about="http://osmtordf.org/osm#addressPostcode">
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Bank"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Bar"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#BusLine"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#BusStop"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#FireFighter"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Hotel"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#House"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Police"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Postoffice"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Restaurant"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#River"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#School"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Shop"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#TrainStation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://osmtordf.org/osm#addressStreet -->
+
+    <owl:ObjectProperty rdf:about="http://osmtordf.org/osm#addressStreet">
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Bank"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Bar"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#BusLine"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#BusStop"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#FireFighter"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Hotel"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#House"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Police"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Postoffice"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Restaurant"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#River"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#School"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Shop"/>
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#TrainStation"/>
+        <rdfs:range rdf:resource="http://osmtordf.org/osm#Street"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://osmtordf.org/osm#educationLevel -->
+
+    <owl:ObjectProperty rdf:about="http://osmtordf.org/osm#educationLevel">
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#School"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://osmtordf.org/osm#streetName -->
+
+    <owl:DatatypeProperty rdf:about="http://osmtordf.org/osm#streetName">
+        <rdfs:domain rdf:resource="http://osmtordf.org/osm#Street"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://osmtordf.org/osm#Bank -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#Bank">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#Bar -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#Bar">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#BusLine -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#BusLine">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#BusStop -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#BusStop">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#Cycleway -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#Cycleway">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#FireFighter -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#FireFighter">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#Hotel -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#Hotel">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#House -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#House">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#OpenStreetMap -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#OpenStreetMap"/>
+    
+
+
+    <!-- http://osmtordf.org/osm#Police -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#Police">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#Postoffice -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#Postoffice">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#Restaurant -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#River -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#River">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#School -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#School">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#Shop -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#Shop">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#Street -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#Street">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#TrainStation -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#TrainStation">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+    
+
+
+    <!-- http://osmtordf.org/osm#TransportOperator -->
+
+    <owl:Class rdf:about="http://osmtordf.org/osm#TransportOperator">
+        <rdfs:subClassOf rdf:resource="http://osmtordf.org/osm#OpenStreetMap"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+
